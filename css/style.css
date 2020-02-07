@@ -1,4 +1,46 @@
 body {
   background-color: #dadada;
   font-size: 10px;
+  text-align: center;
+  margin: 0 auto;
 }
+
+img {
+  width: 100%
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  padding: 1.5em;
+  font-family: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.preview h2 {
+  font-size: 3em;
+  position: absolute;
+  align-content: center;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.preview {
+  margin: 1.5em;
+  width: 100%;
+}
+
+@media (min-width: 575px)
+{
+  .preview {
+    max-width: 480px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-column: 2;
+  }
+
+}
+@media screen and (min-width: 991px) {
+  .display: grid;
